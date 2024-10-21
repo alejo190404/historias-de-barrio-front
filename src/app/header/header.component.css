@@ -1,0 +1,68 @@
+*{
+    /* border: 1px solid red; */
+}
+
+#main-container{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17.5vh;
+}
+
+#bottom-container{
+    height: 7.5vh;
+    background-color: #F3F1F1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blank{
+    width: 15%;
+}
+
+button{
+    border: 0;
+    color: #525151;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.half{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    /* padding-bottom: 0em; */
+    
+}
+
+.logo{
+    width: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#javeriana{
+    background-image: url(../../assets/Escudo-javeriana.png);
+}
+
+#prosofi{
+    background-image: url(../../assets/Escudo-prosofi.png);
+}
+
+#observatorio{
+    background-image: url(../../assets/Escudo-observatorio.png);
+    
+}
+
