@@ -1,0 +1,10 @@
+*{
+    border: 1px solid red;
+}
+
+#main-container{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #2635bf;
+}
