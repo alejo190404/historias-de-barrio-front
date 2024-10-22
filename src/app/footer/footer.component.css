@@ -1,6 +1,6 @@
 *{
-    border: 1px solid red;
-    /* font-family: "Jost", sans-serif; */
+    /* border: 1px solid red; */
+    font-family: "Jost", sans-serif;
 }
 
 #main-container{
@@ -11,7 +11,7 @@
 }
 
 #buttons-container{
-    height: 40vh;
+    height: 50vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -19,12 +19,9 @@
 
 #buttons-container button{
     border-radius: 100%;
-    width: 8em;
-    height: 8em;
+    width: 7em;
+    height: 7em;
     font-size: 2em;
     background-color: #D9D9D9;
-}
-
-button{
-    font-family: "Jost", sans-serif !important;
+    border: 0;
 }
