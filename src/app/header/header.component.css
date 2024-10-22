@@ -53,6 +53,14 @@ button:hover{
     background-position: center;
 }
 
+#historias{
+    background-image: url(../../assets/Imagen-1-historias.png);
+}
+
+#historias:hover{
+    cursor: pointer;
+}
+
 #javeriana{
     background-image: url(../../assets/Escudo-javeriana.png);
 }

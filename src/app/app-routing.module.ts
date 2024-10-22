@@ -4,9 +4,10 @@ import { ConoceMasComponent } from './conoce-mas/conoce-mas.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
-  {path: "", component: LandingPageComponent},
-  {path: "cono", component: ConoceMasComponent},
-  {path: "**", component: LandingPageComponent},
+  {path: "inicio", component: LandingPageComponent},
+  {path: "conocenos", component: ConoceMasComponent},
+  {path: '', redirectTo: 'inicio', pathMatch: 'full'},
+  {path: '**', redirectTo: 'inicio', pathMatch: 'full'},
 ];
 
 @NgModule({

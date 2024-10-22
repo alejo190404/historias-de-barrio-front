@@ -15,16 +15,23 @@ body{
 
 #intro-container{
     background-color: #FCF7C5;
-    height: 70vh;
+    height: 75vh;
 }
 
 .third{
     width: 33%;
     height: 100%;
-    background-image: url("../../assets/Imagen-1-historias.png");
+    /* background-image: url("../../assets/historias-placeholder.png"); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 75%;
 }
 
 .two-third{
