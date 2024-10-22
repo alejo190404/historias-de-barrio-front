@@ -20,4 +20,12 @@ export class HeaderComponent {
   goToLandingPage() {
     this.router.navigate(['inicio']);
   }
+
+  goToDatos() {
+    this.router.navigate(['datos-cuantitativos']);
+  }
+
+  goToContarHistoria() {
+    this.router.navigate(['quiero-contar-mi-historia']);
+  }
 }
