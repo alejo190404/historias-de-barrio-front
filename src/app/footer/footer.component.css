@@ -1,0 +1,27 @@
+*{
+    /* border: 1px solid red; */
+    font-family: "Jost", sans-serif;
+}
+
+#main-container{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #2635bf;
+}
+
+#buttons-container{
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#buttons-container button{
+    border-radius: 100%;
+    width: 7em;
+    height: 7em;
+    font-size: 2em;
+    background-color: #D9D9D9;
+    border: 0;
+}

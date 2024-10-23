@@ -1,0 +1,142 @@
+*{
+    /* border: 1px solid red; */
+    font-family: "Jost", sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#intro-container{
+    background-color: #FCF7C5;
+    height: 75vh;
+}
+
+.third{
+    width: 33%;
+    height: 100%;
+    /* background-image: url("../../assets/historias-placeholder.png"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 75%;
+}
+
+.two-third{
+    width: 66%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-weight: 300;
+    margin: 0;
+}
+
+#intro-paragraph{
+    font-size: 3.1em;
+    text-align: left;
+    color: #60535C;
+}
+
+.text-emphasis{
+    font-weight: 600;
+}
+
+.half{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#first-half{
+}
+
+.slogan-paragraph{
+    font-size: 3.1em;
+    text-align: left;
+    color: #8B6262;
+    font-weight: 400;
+}
+
+.slogan-detail{
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.container:nth-child(even) {
+    background-color: #FCF7C5; /* Apply specific styles here */
+}
+
+.two-fifth{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.three-fifth{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-emphasis{
+    font-weight: 600;
+    color: #60535C;
+    font-size: 4em;
+    height: auto;
+    line-height: 1.5;
+}
+
+.features-paragraph{
+    font-size: 2.5em;
+    margin-top: 1em;
+    color: #8B6262;
+    font-weight: 400;
+}
+
+#image-container{
+    background-image: url("../../assets/mockup-mapa.png");
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#image-mapa{
+    width: 90%;
+}

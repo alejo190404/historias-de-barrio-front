@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer 10+ */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar in Chrome, Safari, and Edge */
+}

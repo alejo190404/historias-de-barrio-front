@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.story-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.story-input label {
+    font-size: 32px;
+    color: #333;
+    font-weight: bolder;
+    width: 100vw;
+    margin: 30px;
+    text-align: left;
+    margin-left: 23vw;
+    margin-top: 15vh;
+}
+
+.input-container {
+    display: flex;
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    position: relative;
+    bottom: 20vh;
+}
+
+.input-container input {
+    width: 44vw;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    background-color: transparent;
+}
+
+
+.upload-btn {
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-btn img {
+    width: 44px;
+    height: 44px;
+}
+
+.quotes-section {
+    background-color: #e1e7f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 50vh;
+    align-content: center;
+    font-size: 32px;
+    height: 100vh;
+}
+
+.quotes-section blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 50px 0;
+    margin-left: 20vw;
+}
+
+.quotes-section .impar {
+    text-align: left;
+}
+
+.quotes-section .par {
+    text-align: center;
+}
+
+.word-cloud {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-cloud img {
+    max-width: 100%;
+    height: auto;
+}
