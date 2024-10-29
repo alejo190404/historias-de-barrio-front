@@ -1,0 +1,43 @@
+<div class="error popup">
+    <h1>Envía tu historia</h1>
+    <!-- <p class="error__title">{{ mensaje }}</p> -->
+    <button id="close-popup" class="btn_error" (click)="cerrarPopup()">
+        <div class="error__close"><svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20">
+                <path fill="#393a37"
+                    d="m15.8333 5.34166-1.175-1.175-4.6583 4.65834-4.65833-4.65834-1.175 1.175 4.65833 4.65834-4.65833 4.6583 1.175 1.175 4.65833-4.6583 4.6583 4.6583 1.175-1.175-4.6583-4.6583z">
+                </path>
+            </svg></div>
+    </button>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <!--Nombre-->
+            <!-- <label for="name">Nombre</label> -->
+            <input type="text" id="name" formControlName="name" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="form-group">
+            <!--Email-->
+            <!-- <label for="email">Email</label> -->
+            <input type="email" id="email" formControlName="email" placeholder="Ingresa tu correo electónico">
+        </div>
+        <div class="form-group">
+            <!--Asunto-->
+            <!-- <label for="number">Celular</label> -->
+            <input type="text" id="number" formControlName="number"  placeholder="Ingresa tu número de celular">
+        </div>
+        <div class="form-group">
+            <!--Cuerpo-->
+            <!-- <label for="address">Dirección de residencia</label> -->
+            <input type="text" id="address" formControlName="address" placeholder="Ingresa tu dirección de residencia">
+        </div>
+        <div class="form-group-column" id="accept-container">
+            <!--Texto para manejo de datos y checkbox para aceptar-->
+            <p>Acepto la <a href="#">política de privacidad</a></p>
+            <!--Checkbox de acepto-->
+            <input type="checkbox" id="accept" formControlName="accept">
+        </div>
+        <div class="form-group-column" id="enviar">
+
+            <button type="submit" id="button-enviar">Enviar</button>
+        </div>
+    </form>
+</div>

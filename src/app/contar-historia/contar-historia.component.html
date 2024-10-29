@@ -3,8 +3,8 @@
     <div class="story-input">
         <label for="historia">Escribe tu historia aquí:</label>
         <div class="input-container">
-            <input type="text" id="historia">
-            <button class="upload-btn">
+            <input type="text" id="historia" #historiaInput>
+            <button class="upload-btn" (click)="abrirPopup(historiaInput.value)">
                 <img src="../../assets/flecha-btn.png" alt="Subir">
             </button>
         </div>
@@ -26,3 +26,4 @@
     </div>
 </div>
 <app-footer style="border: 0"></app-footer>
+<app-popup *ngIf="mostrarPopup" [mensaje]="mensajePopup" (cerrar)="cerrarPopup()"></app-popup>
