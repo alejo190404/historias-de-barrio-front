@@ -1,4 +1,4 @@
-<div class="error popup">
+<div class="error popup" *ngIf="!exitoso">
     <h1>Envía tu historia</h1>
     <!-- <p class="error__title">{{ mensaje }}</p> -->
     <button id="close-popup" class="btn_error" (click)="cerrarPopup()">
@@ -40,4 +40,14 @@
             <button type="submit" id="button-enviar">Enviar</button>
         </div>
     </form>
+</div>
+<div class="error popup" *ngIf="exitoso">
+    <h1>Enviada con éxito</h1>
+    <button id="close-popup" class="btn_error" (click)="cerrarPopup()">
+        <div class="error__close"><svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20">
+                <path fill="#393a37"
+                    d="m15.8333 5.34166-1.175-1.175-4.6583 4.65834-4.65833-4.65834-1.175 1.175 4.65833 4.65834-4.65833 4.6583 1.175 1.175 4.65833-4.6583 4.6583 4.6583 1.175-1.175-4.6583-4.6583z">
+                </path>
+            </svg></div>
+    </button>
 </div>

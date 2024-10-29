@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-popup',
@@ -10,9 +11,13 @@ export class PopupComponent {
   @Input() mensaje: string = "";
   @Output() cerrar = new EventEmitter<void>();
 
+
   cerrarPopup() {
     this.cerrar.emit();
+    this.exitoso = false
   }
+
+  exitoso: boolean = false;
 
   form!: FormGroup;
 
@@ -28,10 +33,19 @@ export class PopupComponent {
     });
   }
 
-  onSubmit(): void {
+  async onSubmit(): Promise<void> {
     if (this.form.valid) {
-      console.log(this.mensaje);
-      
+      emailjs.init("Ci0wROnYKNEOpCFoW");
+      const response = await emailjs.send("service_5j3tmmd", "template_8343y6o", {
+        name: this.form.value.name,
+        mensaje: this.mensaje,
+        email: this.form.value.email,
+        number: this.form.value.number,
+        address: this.form.value.address,
+        email_to: "alejo190404@gmail.com",
+      });
+      this.exitoso = true;
+
     } else {
       for (const controlName of Object.keys(this.form.controls)) {
         const control = this.form.get(controlName);
