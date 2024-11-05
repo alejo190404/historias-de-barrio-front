@@ -17,6 +17,10 @@ export class HeaderComponent {
     this.router.navigate(['conocenos']);
   }
 
+  goToRevisionDocumental() {
+    this.router.navigate(['revision-documental']);
+  }
+
   goToLandingPage() {
     this.router.navigate(['inicio']);
   }
