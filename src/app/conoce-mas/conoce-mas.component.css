@@ -4,69 +4,156 @@
     border: 0;
 }
 
-body {
-    margin: 0;
+.proyecto {
+    display: flex;
 }
 
-.container {
+.linea{
     display: flex;
+}
+
+.proyecto .title-container {
+    display: flex;
+    align-items: center;
+    background-color: #F36E23;
+    height: 75vh;
+    color: white;
+    width: 35vw;
     justify-content: center;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    background-color: #C93900;
+    height: 75vh;
+    color: white;
+    width: 35vw;
+    justify-content: center;
+}
+.title-container h2 {
+    color: white;
+    font-weight: 800;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 60px;
+    line-height: 1.6;
+}
+
+
+
+.title-linea{
+    padding-right: 1vw;
+}
+
+.historias-p {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    width: 70vw;
+}
+
+.historias-p p{
+    font-size: 24px;
+    line-height: 1.8;
+    margin-left: 5vw;
+    margin-right: 5vw;    
+}
+.dos{
+    height: 100vh;
+}
+
+
+.historias-timeline {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.historias-year {
+    text-align: left;
+    color: #f2571a;
+    width: 100%;
+    padding-left: 5vw;
+}
+
+.historias-year h4 {
+    font-size: 50px;
+    color: #C93900;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 20vh;
+}
+
+.historias-year p {
+    font-size: 22px;
+    color: #525151;
+    line-height: 1.4;
+    width: 25vw;
+    position: relative;
+}
+
+.historias-years {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    border-bottom: 13px solid #C93900;
+}
+
+.historias-years span {
+    font-size: 25px;
+    color: #C93900;
+    font-weight: 700;
+    text-align: left;
+    position: absolute;
+    margin-top: 2%;
+}
+.year-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 5vw;
+    align-items: start;
+}
+
+.linea-principal{
+    width: 2vw;
+    background-color: #C93900;
+    height: 25vh;
+    z-index: 100;
+}
+
+.linea-secundaria{
+    width: 2vw;
+    background-color: #C93900;
+    height: 15vh;
+    position: relative;
+    top: 10vh;
+}
+
+.quienes-participan{
     height: 100vh;
     width: 100vw;
-}
-
-#intro-container {
-    background-color: #FCF7C5;
-    height: 75vh;
-}
-
-.third {
-    width: 33vw;
-    height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    background-color: #C1BD17;
     align-items: center;
 }
 
-.two-third {
-    width: 67vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-p {
-    font-weight: 300;
-    margin: 0;
-}
-
-#intro-paragraph {
-    font-size: 3.1em;
-    text-align: left;
-    color: #60535C;
-}
-
-.title {
-    font-size: 4em;
-    text-align: left;
-    color: #60535C;
-
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.text-emphasis {
-    font-weight: 600;
-}
-
-#linea-container {
-    /* width: 100vw; */
-    background-color: #59B4E7;
-
-}
-
-#linea-title {
+.quienes-participan .title-quienes{
     color: white;
+    font-size: 60px;
+    font-weight: 800;
+    width: 35%;
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.quienes-participan img{
+    width: 55vw;
 }
 
 #participantes-container {
@@ -100,7 +187,7 @@ h1 {
 }
 
 .orange{
-    color: orange
+    color: #0047AB
 }
 
 h2 {

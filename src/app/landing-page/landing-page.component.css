@@ -9,37 +9,31 @@ body{
 
 .container{
     display: flex;
-    justify-content: center;
     height: 100vh;
 }
 
 #intro-container{
-    background-color: #FCF7C5;
+    background-color: #F36E23;
     height: 75vh;
+    display: flex;
 }
 
 .third{
-    width: 33%;
-    height: 100%;
-    /* background-image: url("../../assets/historias-placeholder.png"); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 60vw;
 }
 
 .image{
-    width: 75%;
+    width: max-content;
+    height: auto;
 }
 
 .two-third{
-    width: 66%;
+    width: 50vw;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 50px;
 }
 
 p{
@@ -48,95 +42,105 @@ p{
 }
 
 #intro-paragraph{
-    font-size: 3.1em;
+    font-size: 32px;
     text-align: left;
-    color: #60535C;
+    color: #FFFFFF;
 }
 
 .text-emphasis{
     font-weight: 600;
+    font-size: 50px;
 }
 
 .half{
-    width: 50%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    padding-left: 4em;
-    padding-right: 4em;
+    background-color: #C93900;
+
 }
 
-#first-half{
+.images-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B7EBF6;
+    width: 100vw;
+    height: 30vh;
+    margin-top: 25vh;
 }
+
+.image-center{
+    position: absolute;
+    z-index: 100;
+    height: 70vh;
+    margin-bottom: 30vh;
+}
+
+.images-container .image-left{
+    margin: 10px;
+    padding-right: 25vw;
+}
+
+.images-container .image-right{
+    padding-left: 15vw;
+}
+
+
 
 .slogan-paragraph{
-    font-size: 3.1em;
-    text-align: left;
-    color: #8B6262;
-    font-weight: 400;
-}
-
-.slogan-detail{
-    font-size: 1.5em;
-    margin-top: 2em;
-}
-
-.container:nth-child(even) {
-    background-color: #FCF7C5; /* Apply specific styles here */
-}
-
-.two-fifth{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    padding-left: 2em;
-    padding-right: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.three-fifth{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    padding-left: 2em;
-    padding-right: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.title-emphasis{
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
     font-weight: 600;
-    color: #60535C;
-    font-size: 4em;
-    height: auto;
-    line-height: 1.5;
+    margin-top: 5vh;
 }
 
-.features-paragraph{
-    font-size: 2.5em;
-    margin-top: 1em;
-    color: #8B6262;
-    font-weight: 400;
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C1BD17;
+    ; /* Color de fondo similar al de la imagen */
+    padding: 20px;
+    width: 100vw;
 }
 
-#image-container{
-    background-image: url("../../assets/mockup-mapa.png");
-    width: 90%;
-    height: 90%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 25vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 60vh;
+    transition: transform 0.3s ease-in-out;
 }
 
-#image-mapa{
-    width: 90%;
+.card-image {
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.card p {
+    font-size: 24px;
+    color: #525151;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
