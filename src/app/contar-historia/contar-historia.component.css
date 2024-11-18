@@ -13,9 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 75vh;
 }
 
 .story-input label {
@@ -65,40 +64,66 @@
     height: 44px;
 }
 
+.midsection1{
+    height: 50vh;
+    position: relative;
+    background: #F36E23;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .quotes-section {
-    background-color: #e1e7f2;
+    
     padding: 20px;
     margin-bottom: 20px;
-    height: 50vh;
     align-content: center;
-    font-size: 32px;
-    height: 100vh;
+    
 }
 
-.quotes-section blockquote {
+blockquote {
     font-style: italic;
-    color: #333;
+    color: #ffffff;
     margin: 50px 0;
-    margin-left: 20vw;
-}
-
-.quotes-section .impar {
+    margin-left: 5vw;
+    margin-right: 5vw;
     text-align: left;
+    font-size: 32px;
+    width: 80vw;
 }
 
-.quotes-section .par {
-    text-align: center;
+.midsection2 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 40vh;
 }
 
-.word-cloud {
-    text-align: center;
-    height: 100vh;
+.img1{
+    height: 60vh;
+    width: 100vw;
+}
+
+.midsection4{
+    height: 50vh;
+    position: relative;
+    background: #C93900;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50vh;
+    margin-bottom: 45vh;
 }
 
-.word-cloud img {
-    max-width: 100%;
-    height: auto;
+
+.midsection3 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 70vh;
 }
+
+.img2{
+    height: 80vh;
+    width: 100vw;
+}
+
+
