@@ -42,7 +42,7 @@ export class PopupComponent {
         email: this.form.value.email,
         number: this.form.value.number,
         address: this.form.value.address,
-        email_to: "juanf.brinez@gmail.com",
+        email_to: "prosofi@javeriana.edu.co",
       });
       this.exitoso = true;
 
